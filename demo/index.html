@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>video 标签</title>
+</head>
+<body>
+  <!-- <video src="../video/test.mp4" width="320" height="240" controls
+   controlslist="nodownload nofullscreen" poster="./images/poster.jpg"
+      muted  preload
+   ></video> -->
+
+   <!-- <video src="../video/test.mp4" width="320" height="240" controls
+    controlslist="nodownload nofullscreen" poster="./images/poster.jpg"
+          autoplay id="test"
+    ></video> -->
+
+    <!-- <script>
+      let v = document.getElementById("test");
+      // todo 设置音量
+      v.volume = 0.5;
+      // todo 初始化视频从80s开始播放
+      v.currentTime = 80;
+      // todo 3s后更换视频
+      setTimeout(() => {
+        v.src='./video/test-2.mp4';
+      }, 3000);
+    </script> -->
+
+    <!-- todo 主备视频源(预防一个cdn挂掉) -->
+    <video width="320" height="240" controls controlslist="nodownload nofullscreen"
+      autoplay
+    >
+      <source src="../video/oceans.mp4" type="video/mp4"></source>
+      <source src="../video/test-2.mp4" type="video/mp4"></source>
+    </video>
+</body>
+</html>
